@@ -20,8 +20,8 @@ A sleek, modern web application for testing MCP server connectivity with real-ti
 ### 1. Clone Repository
 
 ```sh
-git clone https://github.com/yourusername/mcp-tester.git
-cd mcp-tester
+git clone https://github.com/harshaagrawal20/MCP-server-tester.git
+cd MCP-server-tester
 ```
 
 ### 2. Install Dependencies
