@@ -1,19 +1,51 @@
 # MCP Server Tester 🔌
 
+![Glassmorphism UI](https://img.shields.io/badge/Design-Glassmorphism-blueviolet)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-success)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)
 
-
-
-
-A sleek, modern web application for testing MCP server connectivity with real-time validation and beautiful visual feedback.
+A modern web application for testing MCP server connectivity with real-time validation and beautiful visual feedback.
 
 ## Features ✨
 
 - 🌈 **Glassmorphism UI** with animated elements
-- ⚡ **Instant connection testing**
-- 🛡️ **Robust error handling**
-- 📱 **Fully responsive design**
-- 🔄 **Interactive loading states**
-- 📊 **Detailed connection diagnostics**
+- ⚡ **Instant connection testing** (5000ms timeout)
+- 🛡️ **Robust error handling** for various failure cases
+- 📱 **Fully responsive design** (mobile & desktop)
+- 🔄 **Interactive loading states** with visual feedback
+- 📊 **Detailed connection diagnostics** with status codes
+
+# video
+
+drive link of project
+
+https://drive.google.com/file/d/1ZxeIE7YEv2P0RaFJ8jNjgJ1lteVIvw1U/view?usp=sharing
+
+
+
+
+
+# screenshots
+![image](https://github.com/user-attachments/assets/317979e8-4d34-4e75-8c08-c75bf535d339)
+
+![image](https://github.com/user-attachments/assets/40e7bc9a-3845-4ebd-a90f-8e8af74fda3f)
+
+![image](https://github.com/user-attachments/assets/4e105e99-9766-4df8-a2f4-0a8476b58a62)
+
+![image](https://github.com/user-attachments/assets/07dd4f3c-fd52-453c-b2b5-7a50560c7ae8)
+
+![image](https://github.com/user-attachments/assets/66fb5cc2-f204-4bc6-8371-a136c6e5ea6c)
+
+![image](https://github.com/user-attachments/assets/f0fbcb0e-a6be-40ad-9c0a-4268dd309a60)
+
+
+
+
+
+
+##deployed link
+
+https://mcp-tester-5dfzecpbb-harshaagrawal20s-projects.vercel.app/
 
 ## Quick Start 🚀
 
@@ -28,6 +60,7 @@ cd MCP-server-tester
 
 ```sh
 npm install
+npm install express cors body-parser axios
 ```
 
 ### 3. Start Development Server
