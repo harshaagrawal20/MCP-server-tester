@@ -7,8 +7,14 @@ const path = require("path");
 const app = express();
 const PORT = 5000;
 
-// Middleware
-app.use(cors());
+// CORS configuration: Allow all origins for development purposes or specify specific domains
+app.use(cors({
+    origin: '*', // Replace '*' with specific domains for production (e.g., 'https://yourfrontenddomain.com')
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
+// Middleware for parsing JSON body
 app.use(bodyParser.json());
 
 // Route for MCP Testing
@@ -62,15 +68,15 @@ app.post('/test-mcp', async (req, res) => {
     }
 });
 
-// Serve frontend
+// Serve frontend (static files from the "public" directory)
 app.use(express.static(path.join(__dirname, "public")));
 
-// Default route to serve the frontend
+// Default route to serve the frontend (index.html)
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// Start the server
+// Start the server on specified port
 app.listen(PORT, () => {
     console.log(`🚀 Server running on port ${PORT}`);
 });
